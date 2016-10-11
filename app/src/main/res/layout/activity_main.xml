@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.java3.a9_adresdefteriodev.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adres Ekleme/Yönetim"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtbaslik"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Adres Başlığı Giriniz" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtil"
+        android:layout_below="@+id/txtbaslik"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="İl Giriniz" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtilce"
+        android:layout_below="@+id/txtil"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="İlçe giriniz" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtsokak"
+        android:layout_below="@+id/txtilce"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Sokak Giriniz" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtadres"
+        android:layout_below="@+id/txtsokak"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Adres Giriniz" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ekle"
+        android:id="@+id/btnEkle"
+        android:layout_below="@+id/txtadres"
+        android:onClick="fncEkle"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sil"
+        android:id="@+id/btnSil"
+        android:layout_below="@+id/txtadres"
+        android:onClick="fncSil"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/liste"
+        android:layout_below="@+id/btnEkle"
+        android:layout_alignParentStart="true" />
+
+    Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="deneme"
+        android:id="@+id/btndeneme"
+        android:layout_below="@+id/txtadres"
+        android:onClick="dene"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
